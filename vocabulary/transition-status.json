@@ -1,0 +1,9 @@
+{
+  "values": [
+    "candidate",
+    "confirmed",
+    "reversed",
+    "superseded",
+    "indeterminate"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "profile": "WRS-Full",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "regime-interval",
+    "regime-classification-contract",
+    "regime-transition",
+    "boundary-event",
+    "temporal-marker",
+    "continuity-assessment",
+    "recovery-assessment",
+    "lead-time-assessment",
+    "worldline-finding",
+    "conformance-report"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

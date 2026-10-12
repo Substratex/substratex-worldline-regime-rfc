@@ -1,0 +1,9 @@
+{
+  "profile": "WRS-Temporal",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "temporal-marker"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

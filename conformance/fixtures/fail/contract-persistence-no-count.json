@@ -1,0 +1,46 @@
+{
+  "fixture_id": "contract-persistence-no-count",
+  "schema": "regime-classification-contract",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "contract_id": "urn:example:wrs:contract:1",
+    "version": "1.0",
+    "required_signals": [
+      "stability_signal",
+      "drift_signal"
+    ],
+    "eligible_horizon": "evidence available through current coordinate",
+    "thresholds": {
+      "profile": "example-only"
+    },
+    "persistence": {
+      "required": true,
+      "minimum_observations": null
+    },
+    "hysteresis": {
+      "used": true,
+      "entry_rule": "declared entry threshold",
+      "exit_rule": "declared exit threshold"
+    },
+    "missingness_behavior": "indeterminate",
+    "permitted_regimes": [
+      "stable",
+      "transitional",
+      "phase_locked",
+      "collapse",
+      "recovery"
+    ],
+    "candidate_behavior": "candidate until confirmation criteria are met",
+    "uncertainty_rule": "support is evidentiary support, not truth probability",
+    "forbidden_interpretations": [
+      "hidden_state",
+      "consciousness",
+      "intent",
+      "causation"
+    ],
+    "method_ref": "urn:example:method:regime"
+  }
+}

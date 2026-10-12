@@ -1,0 +1,9 @@
+{
+  "values": [
+    "stable",
+    "transitional",
+    "phase_locked",
+    "collapse",
+    "recovery"
+  ]
+}

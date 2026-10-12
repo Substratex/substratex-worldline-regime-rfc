@@ -1,0 +1,30 @@
+{
+  "fixture_id": "lead-not-computable-zero",
+  "schema": "lead-time-assessment",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "assessment_id": "urn:example:lead:1",
+    "worldline_id": "urn:example:worldline:1",
+    "t_star_ref": "urn:example:marker:t_star",
+    "t_f_ref": "urn:example:marker:t_f",
+    "status": "not_computable",
+    "delta_t": 0,
+    "coordinate_system": "turn",
+    "prospective_status": "not_applicable",
+    "warning_window": {
+      "open_marker_ref": "urn:example:marker:t_star",
+      "close_coordinate": {
+        "system": "turn",
+        "value": 47,
+        "unit": "turn"
+      },
+      "open": true
+    },
+    "missingness": [
+      "not_supplied"
+    ]
+  }
+}

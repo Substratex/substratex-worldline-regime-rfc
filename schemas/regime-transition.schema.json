@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:regime-transition",
+  "title": "WRS Regime Transition",
+  "type": "object",
+  "required": [
+    "wrs_version",
+    "transition_id",
+    "worldline_id",
+    "source_regime",
+    "target_regime",
+    "coordinate",
+    "status",
+    "contract_ref",
+    "evidence_refs"
+  ],
+  "properties": {
+    "wrs_version": {
+      "const": "1.0"
+    },
+    "transition_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "worldline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_regime": {
+      "anyOf": [
+        {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/regime"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "target_regime": {
+      "anyOf": [
+        {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/regime"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coordinate": {
+      "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "confirmed",
+        "reversed",
+        "superseded",
+        "indeterminate"
+      ]
+    },
+    "contract_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "boundary_event_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reversal_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

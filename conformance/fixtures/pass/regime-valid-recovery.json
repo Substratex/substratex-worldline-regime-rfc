@@ -1,0 +1,30 @@
+{
+  "fixture_id": "regime-valid-recovery",
+  "schema": "regime-interval",
+  "expect_schema_valid": true,
+  "expect_semantic": "pass",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "interval_id": "urn:example:interval:recovery",
+    "worldline_id": "urn:example:worldline:1",
+    "regime": "recovery",
+    "start": {
+      "system": "turn",
+      "value": 1,
+      "unit": "turn"
+    },
+    "end": {
+      "system": "turn",
+      "value": 8,
+      "unit": "turn"
+    },
+    "status": "confirmed",
+    "contract_ref": "urn:example:wrs:contract:1",
+    "evidence_refs": [
+      "urn:example:evidence:1"
+    ],
+    "conditions": [],
+    "support": 0.9
+  }
+}

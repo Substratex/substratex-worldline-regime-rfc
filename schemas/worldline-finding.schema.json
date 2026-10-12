@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:worldline-finding",
+  "title": "WRS Worldline Finding",
+  "type": "object",
+  "required": [
+    "wrs_version",
+    "finding_id",
+    "worldline_id",
+    "finding_type",
+    "evidence_refs",
+    "method",
+    "temporal_scope",
+    "status",
+    "claim_boundary"
+  ],
+  "properties": {
+    "wrs_version": {
+      "const": "1.0"
+    },
+    "finding_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "worldline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finding_type": {
+      "enum": [
+        "regime_timeline",
+        "transition_window",
+        "boundary_proximity",
+        "continuity",
+        "discontinuity",
+        "open_watch",
+        "lead_time",
+        "recovery",
+        "re_entry",
+        "trajectory_shape"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "method": {
+      "type": "object",
+      "required": [
+        "method_id",
+        "version"
+      ],
+      "properties": {
+        "method_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "temporal_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "confirmed",
+        "conditional",
+        "not_computable",
+        "indeterminate",
+        "superseded"
+      ]
+    },
+    "support": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "claim_boundary": {
+      "type": "object",
+      "required": [
+        "permits",
+        "prohibits"
+      ],
+      "properties": {
+        "permits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prohibits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "missingness": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/missingness"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,10 @@
+{
+  "profile": "WRS-Transition",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "regime-transition",
+    "boundary-event"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@substratex/worldline-regime-rfc",
+  "version": "1.0.0-rfc.1",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "validate": "python scripts/validate.py"
+  }
+}

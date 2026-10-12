@@ -1,0 +1,27 @@
+{
+  "wrs_version": "1.0",
+  "report_id": "urn:substratex:worldline-regime:1.0:report:initial",
+  "implementation": {
+    "name": "WRS reference validator",
+    "version": "1.0.0-rfc.1",
+    "language": "Python"
+  },
+  "profiles": [
+    "WRS-Object",
+    "WRS-Regime",
+    "WRS-Transition",
+    "WRS-Temporal",
+    "WRS-Continuity",
+    "WRS-LeadTime",
+    "WRS-Recovery"
+  ],
+  "corpus_version": "1.0-rfc.1",
+  "results": {
+    "passed": 42,
+    "failed": 0,
+    "skipped": 0
+  },
+  "deviations": [],
+  "environment": "Python 3.13.5",
+  "created_at": "2026-10-12T17:55:00Z"
+}

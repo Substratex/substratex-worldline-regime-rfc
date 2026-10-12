@@ -1,0 +1,25 @@
+{
+  "wrs_version": "1.0",
+  "interval_id": "urn:example:interval:transitional",
+  "worldline_id": "urn:example:worldline:1",
+  "regime": "transitional",
+  "start": {
+    "system": "turn",
+    "value": 8,
+    "unit": "turn"
+  },
+  "end": {
+    "system": "turn",
+    "value": 20,
+    "unit": "turn"
+  },
+  "status": "confirmed",
+  "contract_ref": "urn:example:wrs:contract:1",
+  "evidence_refs": [
+    "urn:example:evidence:1"
+  ],
+  "conditions": [
+    "boundary_proximal"
+  ],
+  "support": 0.82
+}

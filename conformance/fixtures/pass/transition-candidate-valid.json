@@ -1,0 +1,26 @@
+{
+  "fixture_id": "transition-candidate-valid",
+  "schema": "regime-transition",
+  "expect_schema_valid": true,
+  "expect_semantic": "pass",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "transition_id": "urn:example:transition:1",
+    "worldline_id": "urn:example:worldline:1",
+    "source_regime": "stable",
+    "target_regime": "collapse",
+    "coordinate": {
+      "system": "turn",
+      "value": 8,
+      "unit": "turn"
+    },
+    "status": "candidate",
+    "contract_ref": "urn:example:wrs:contract:1",
+    "evidence_refs": [
+      "urn:example:evidence:1"
+    ],
+    "boundary_event_ref": null,
+    "reversal_of": null
+  }
+}

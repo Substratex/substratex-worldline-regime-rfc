@@ -1,0 +1,34 @@
+{
+  "fixture_id": "continuity-across-run-boundary",
+  "schema": "continuity-assessment",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "assessment_id": "urn:example:continuity:1",
+    "worldline_id": "urn:example:worldline:1",
+    "horizon": {
+      "start": {
+        "system": "turn",
+        "value": 1,
+        "unit": "turn"
+      },
+      "end": {
+        "system": "turn",
+        "value": 47,
+        "unit": "turn"
+      }
+    },
+    "status": "continuous",
+    "evidence_basis": [
+      "urn:example:evidence:1"
+    ],
+    "discontinuities": [],
+    "run_boundary": true,
+    "method": {
+      "method_id": "urn:example:method:continuity",
+      "version": "1.0"
+    }
+  }
+}

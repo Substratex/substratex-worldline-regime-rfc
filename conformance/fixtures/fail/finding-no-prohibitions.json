@@ -1,0 +1,34 @@
+{
+  "fixture_id": "finding-no-prohibitions",
+  "schema": "worldline-finding",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "finding_id": "urn:example:finding:open-watch",
+    "worldline_id": "urn:example:worldline:1",
+    "finding_type": "open_watch",
+    "evidence_refs": [
+      "urn:example:marker:t_star",
+      "urn:example:evidence:1"
+    ],
+    "method": {
+      "method_id": "urn:example:method:open-watch",
+      "version": "1.0"
+    },
+    "temporal_scope": "turn 24 through turn 47",
+    "status": "confirmed",
+    "support": 0.76,
+    "claim_boundary": {
+      "permits": [
+        "confirmed boundary occurred",
+        "open watch remains active"
+      ],
+      "prohibits": []
+    },
+    "missingness": [
+      "not_supplied"
+    ]
+  }
+}

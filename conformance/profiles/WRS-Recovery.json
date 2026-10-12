@@ -1,0 +1,9 @@
+{
+  "profile": "WRS-Recovery",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "recovery-assessment"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

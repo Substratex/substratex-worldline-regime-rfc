@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:worldline",
+  "title": "WRS Worldline",
+  "type": "object",
+  "required": [
+    "wrs_version",
+    "worldline_id",
+    "run_id",
+    "coordinate_system",
+    "evidence_horizon",
+    "evidence_refs",
+    "method",
+    "regime_intervals",
+    "transition_refs",
+    "marker_refs",
+    "scope",
+    "missingness"
+  ],
+  "properties": {
+    "wrs_version": {
+      "const": "1.0"
+    },
+    "worldline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_system": {
+      "type": "object",
+      "required": [
+        "id",
+        "ordering"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ordering": {
+          "enum": [
+            "ascending",
+            "declared"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_horizon": {
+      "type": "object",
+      "required": [
+        "start",
+        "end",
+        "assertion_horizon"
+      ],
+      "properties": {
+        "start": {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+        },
+        "end": {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+        },
+        "assertion_horizon": {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "method": {
+      "type": "object",
+      "required": [
+        "method_id",
+        "version"
+      ],
+      "properties": {
+        "method_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "classification_contract_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "regime_intervals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transition_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "marker_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "missingness": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "state"
+        ],
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "state": {
+            "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/missingness"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cross_run": {
+      "type": "boolean"
+    },
+    "source_run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

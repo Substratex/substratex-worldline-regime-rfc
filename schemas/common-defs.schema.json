@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:common-defs",
+  "title": "WRS Common Definitions",
+  "$defs": {
+    "coordinate": {
+      "type": "object",
+      "required": [
+        "system",
+        "value"
+      ],
+      "properties": {
+        "system": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": [
+            "number",
+            "integer",
+            "string"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "regime": {
+      "enum": [
+        "stable",
+        "transitional",
+        "phase_locked",
+        "collapse",
+        "recovery"
+      ]
+    },
+    "condition": {
+      "enum": [
+        "brittle",
+        "open_watch",
+        "partial_recovery",
+        "failed_recovery",
+        "re_entry",
+        "recovery_pending",
+        "boundary_proximal",
+        "new_stable_formation"
+      ]
+    },
+    "missingness": {
+      "enum": [
+        "not_supplied",
+        "not_observed",
+        "unavailable",
+        "not_eligible",
+        "not_computable",
+        "withheld",
+        "partial",
+        "conflicting"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "profile": "WRS-Continuity",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "continuity-assessment"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

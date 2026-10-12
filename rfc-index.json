@@ -1,0 +1,67 @@
+{
+  "standard": "Worldline and Regime Standard",
+  "acronym": "WRS",
+  "target_version": "1.0",
+  "status": "Draft",
+  "namespace": "urn:substratex:worldline-regime:1.0:",
+  "originator": "Arjay Asadi",
+  "publisher": "SubstrateX",
+  "rfcs": [
+    {
+      "id": "RFC-WR-0000",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0001",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0002",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0003",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0004",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0005",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0006",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0007",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0008",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0009",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0010",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0011",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0012",
+      "status": "Draft"
+    },
+    {
+      "id": "RFC-WR-0013",
+      "status": "Draft"
+    }
+  ]
+}

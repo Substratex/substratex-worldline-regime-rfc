@@ -1,0 +1,12 @@
+{
+  "values": [
+    "brittle",
+    "open_watch",
+    "partial_recovery",
+    "failed_recovery",
+    "re_entry",
+    "recovery_pending",
+    "boundary_proximal",
+    "new_stable_formation"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:lead-time-assessment",
+  "title": "WRS Lead-Time Assessment",
+  "type": "object",
+  "required": [
+    "wrs_version",
+    "assessment_id",
+    "worldline_id",
+    "t_star_ref",
+    "t_f_ref",
+    "status",
+    "coordinate_system",
+    "prospective_status"
+  ],
+  "properties": {
+    "wrs_version": {
+      "const": "1.0"
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "worldline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "t_star_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "t_f_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "computed",
+        "not_computable",
+        "conditional",
+        "indeterminate"
+      ]
+    },
+    "delta_t": {
+      "type": [
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "coordinate_system": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prospective_status": {
+      "enum": [
+        "prospective",
+        "retrospective",
+        "not_applicable",
+        "indeterminate"
+      ]
+    },
+    "warning_window": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "open_marker_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "close_coordinate": {
+          "anyOf": [
+            {
+              "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "open": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "missingness": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/missingness"
+      }
+    }
+  },
+  "additionalProperties": false
+}

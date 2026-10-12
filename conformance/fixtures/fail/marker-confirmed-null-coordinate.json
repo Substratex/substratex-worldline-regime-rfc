@@ -1,0 +1,28 @@
+{
+  "fixture_id": "marker-confirmed-null-coordinate",
+  "schema": "temporal-marker",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "marker_id": "urn:example:marker:t_star",
+    "worldline_id": "urn:example:worldline:1",
+    "marker_type": "t_star",
+    "coordinate": null,
+    "status": "confirmed",
+    "method": {
+      "method_id": "urn:example:method:boundary",
+      "version": "1.0"
+    },
+    "evidence_horizon": {
+      "system": "turn",
+      "value": 24,
+      "unit": "turn"
+    },
+    "evidence_refs": [
+      "urn:example:evidence:1"
+    ],
+    "qualification": "confirmed boundary criteria met"
+  }
+}

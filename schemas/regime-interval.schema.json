@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:worldline-regime:1.0:schema:regime-interval",
+  "title": "WRS Regime Interval",
+  "type": "object",
+  "required": [
+    "wrs_version",
+    "interval_id",
+    "worldline_id",
+    "regime",
+    "start",
+    "status",
+    "contract_ref",
+    "evidence_refs"
+  ],
+  "properties": {
+    "wrs_version": {
+      "const": "1.0"
+    },
+    "interval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "worldline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "regime": {
+      "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/regime"
+    },
+    "start": {
+      "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+    },
+    "end": {
+      "anyOf": [
+        {
+          "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/coordinate"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "confirmed",
+        "superseded",
+        "indeterminate"
+      ]
+    },
+    "contract_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "urn:substratex:worldline-regime:1.0:schema:common-defs#/$defs/condition"
+      }
+    },
+    "support": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "additionalProperties": false
+}

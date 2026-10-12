@@ -1,0 +1,10 @@
+{
+  "profile": "WRS-LeadTime",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "temporal-marker",
+    "lead-time-assessment"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

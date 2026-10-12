@@ -1,0 +1,14 @@
+{
+  "values": [
+    "regime_timeline",
+    "transition_window",
+    "boundary_proximity",
+    "continuity",
+    "discontinuity",
+    "open_watch",
+    "lead_time",
+    "recovery",
+    "re_entry",
+    "trajectory_shape"
+  ]
+}

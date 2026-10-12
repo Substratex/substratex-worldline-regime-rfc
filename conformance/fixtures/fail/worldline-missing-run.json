@@ -1,0 +1,66 @@
+{
+  "fixture_id": "worldline-missing-run",
+  "schema": "worldline",
+  "expect_schema_valid": false,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "worldline_id": "urn:example:worldline:1",
+    "coordinate_system": {
+      "id": "turn",
+      "ordering": "ascending",
+      "unit": "turn"
+    },
+    "evidence_horizon": {
+      "start": {
+        "system": "turn",
+        "value": 1,
+        "unit": "turn"
+      },
+      "end": {
+        "system": "turn",
+        "value": 47,
+        "unit": "turn"
+      },
+      "assertion_horizon": {
+        "system": "turn",
+        "value": 47,
+        "unit": "turn"
+      }
+    },
+    "evidence_refs": [
+      "urn:example:evidence:1"
+    ],
+    "method": {
+      "method_id": "urn:example:method:worldline",
+      "version": "1.0",
+      "classification_contract_ref": "urn:example:wrs:contract:1"
+    },
+    "regime_intervals": [
+      "urn:example:interval:stable",
+      "urn:example:interval:transitional"
+    ],
+    "transition_refs": [
+      "urn:example:transition:1"
+    ],
+    "marker_refs": [
+      "urn:example:marker:t_aw",
+      "urn:example:marker:t_candidate",
+      "urn:example:marker:t_star",
+      "urn:example:marker:t_f"
+    ],
+    "scope": "single-run observable computational behavior",
+    "missingness": [
+      {
+        "field": "t_f",
+        "state": "not_supplied"
+      }
+    ],
+    "cross_run": false,
+    "source_run_ids": [
+      "urn:example:run:1"
+    ],
+    "extensions": {}
+  }
+}

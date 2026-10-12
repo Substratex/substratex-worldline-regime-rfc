@@ -1,0 +1,30 @@
+{
+  "fixture_id": "regime-brittle-not-top-level",
+  "schema": "regime-interval",
+  "expect_schema_valid": false,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "interval_id": "urn:example:interval:stable",
+    "worldline_id": "urn:example:worldline:1",
+    "regime": "brittle",
+    "start": {
+      "system": "turn",
+      "value": 1,
+      "unit": "turn"
+    },
+    "end": {
+      "system": "turn",
+      "value": 8,
+      "unit": "turn"
+    },
+    "status": "confirmed",
+    "contract_ref": "urn:example:wrs:contract:1",
+    "evidence_refs": [
+      "urn:example:evidence:1"
+    ],
+    "conditions": [],
+    "support": 0.9
+  }
+}

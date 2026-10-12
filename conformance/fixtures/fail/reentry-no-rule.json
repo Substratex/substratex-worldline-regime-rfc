@@ -1,0 +1,29 @@
+{
+  "fixture_id": "reentry-no-rule",
+  "schema": "recovery-assessment",
+  "expect_schema_valid": true,
+  "expect_semantic": "fail",
+  "notes": "",
+  "object": {
+    "wrs_version": "1.0",
+    "assessment_id": "urn:example:recovery:1",
+    "worldline_id": "urn:example:worldline:1",
+    "status": "confirmed",
+    "precursor_state": "collapse",
+    "candidate_marker_ref": "urn:example:marker:t_recovery_candidate",
+    "confirmed_marker_ref": "urn:example:marker:t_recovery",
+    "evidence_refs": [
+      "urn:example:evidence:recovery"
+    ],
+    "persistence_satisfied": true,
+    "re_entry": {
+      "assessed": true,
+      "correspondence_rule": null,
+      "result": "re_entry"
+    },
+    "method": {
+      "method_id": "urn:example:method:recovery",
+      "version": "1.0"
+    }
+  }
+}

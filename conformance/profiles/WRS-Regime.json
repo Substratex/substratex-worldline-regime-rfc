@@ -1,0 +1,10 @@
+{
+  "profile": "WRS-Regime",
+  "wrs_version": "1.0",
+  "required_object_types": [
+    "worldline",
+    "regime-interval",
+    "regime-classification-contract"
+  ],
+  "note": "Conformance is not scientific validation or SubstrateX certification."
+}

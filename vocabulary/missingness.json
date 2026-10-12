@@ -1,0 +1,12 @@
+{
+  "values": [
+    "not_supplied",
+    "not_observed",
+    "unavailable",
+    "not_eligible",
+    "not_computable",
+    "withheld",
+    "partial",
+    "conflicting"
+  ]
+}
